@@ -1,0 +1,175 @@
+body, html {
+	height: 100%;
+	margin: 0;
+	font-family: 'Lato', sans-serif;
+
+}
+
+.bgimg-1, .bgimg-2{
+	position: relative;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.bgimg-1 {
+	background-image: url("https://source.unsplash.com/9o-VrJSwGuw");
+	min-height: 100%
+}
+
+.bgimg-2 {
+	background-image: url("https://source.unsplash.com/0LU4vO5iFpM");
+	min-height: 100%;
+}
+
+.mainText {
+  color: white;
+  font-size: 6rem;
+  margin: 0;
+}
+
+.caption {
+  padding: 10%;
+}
+
+.caption2 {
+  color: white;
+  text-align: center;
+}
+
+.fa-chevron-down {
+  font-size: 2rem;
+}
+
+#quoteContainer {
+  position: absolute;
+  width: 675px;
+  margin-left: auto;
+  margin-right: auto;
+  top: 10%;
+  left: 0;
+  right: 0;
+  
+  padding: 25px;
+  border-radius: 25px;
+}
+
+#quoteDisplay, #authorDisplay {
+  text-align: center;
+	color: white;
+  font-size: 2rem;
+  margin: 0 auto;
+  padding-top: 10px;
+  font-weight: 700;
+  text-shadow: 2px 2px black;
+}
+
+#authorDisplay {
+  padding-top: 10%;
+  font-size: 1rem;
+}
+
+.fa-twitter-square {
+  color: white;
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+
+.fa-tumblr-square {
+  color: white;
+  margin-left: 10%;
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+
+button {
+  
+    border-radius: 2em;
+    border: 2px solid #fff;
+    color: #fff;
+    background-color: transparent;
+    height: 2.4rem;
+    font-size: 1rem;
+    padding: 1rem;
+    line-height: 2px;
+    transition: .2s;
+    width: auto;
+    float: right;
+    margin-right:-5%;
+}
+
+button:focus {
+  outline: 0;
+}
+
+button:hover {
+  background-color: #00aced;
+  border-color: #00aced;
+  cursor: pointer
+}
+
+.fa-twitter-square:hover {
+  color: #00aced;
+}
+
+.fa-tumblr-square:hover {
+  color: #00aced;
+}
+.fa-quote-left{
+  font-size: 1.5rem;
+  color: white;
+}
+
+.fa-quote-right {
+  float: right;
+  padding-top: 2%;
+  font-size: 1.5rem;
+  color: white;
+}
+
+#buttons {
+  padding-top: 10%;
+}
+
+.fa-chevron-down:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 725px) {
+  
+  
+  #quoteContainer {
+    width: 400px;
+  }
+  
+  #authorDisplay {
+    padding-top: 20%;
+    font-size: 1rem;
+}
+  .bgimg-1, .bgimg-2 {
+    overflow: auto;
+  }
+ 
+}
+
+@media screen and (max-width: 630px) {
+  .mainText {
+    font-size: 4.7rem;
+  }
+  
+  #quoteContainer {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .mainText {
+    font-size: 3rem;
+  }
+  
+  #quoteContainer {
+    width: 250px;
+  }
+}
